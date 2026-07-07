@@ -12,36 +12,39 @@
 <link rel="icon" type="image/png" href="imagenes/favicon.png">
 <link rel="apple-touch-icon" href="imagenes/logo_comunidad_itvh.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
   :root {
-    --bg: #FAF8F2;
-    --bg-secondary: #F1EDE2;
-    --bg-tertiary: #E9E2D2;
-    --text-primary: #1E2A22;
-    --text-secondary: #5B6B5F;
-    --text-muted: #97A294;
-    --border: #DED7C4;
-    --border-hover: #C9C0A8;
-    --accent: #2E6E4E;
-    --accent-light: #E4EFE6;
-    --accent-dark: #1D4A33;
-    --gold: #B5832A;
-    --gold-light: #F4E7CE;
+    --bg: #020617;
+    --bg-secondary: #0b1327;
+    --bg-tertiary: #0f172a;
+    --text-primary: #e5e7eb;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --border: rgba(56, 189, 248, 0.16);
+    --border-hover: rgba(56, 189, 248, 0.4);
+    --accent: #38bdf8;
+    --accent-light: rgba(56, 189, 248, 0.12);
+    --accent-dark: #0284c7;
+    --gold: #F5A623;
+    --gold-light: rgba(245, 166, 35, 0.12);
     --radius: 8px;
     --radius-lg: 12px;
-    --note-bg: #F0F4FF;
-    --note-border: #5B7FD4;
-    --note-text: #1E3A7B;
-    --tag-bg: rgba(30,42,34,0.06);
+    --note-bg: rgba(56, 189, 248, 0.06);
+    --note-border: #38bdf8;
+    --note-text: #7dd3fc;
+    --tag-bg: rgba(56, 189, 248, 0.08);
+    --allowed-bg: rgba(52, 211, 153, 0.08);
+    --allowed-border: #34d399;
+    --allowed-text: #6ee7b7;
   }
 
   html { scroll-behavior: smooth; }
 
   body {
-    font-family: 'Inter', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
     font-size: 15px;
     line-height: 1.7;
     color: var(--text-primary);
@@ -50,7 +53,7 @@
   }
 
   h1, h2, .brand-name, .block-title, .module-title, .final-brand-text h2, .hero-meta, .module-num {
-    font-family: 'Space Grotesk', 'Inter', system-ui, sans-serif;
+    font-family: 'Poppins', system-ui, sans-serif;
   }
 
   a { color: inherit; }
@@ -107,12 +110,12 @@
   }
   .hero-band {
     height: 56px;
-    background-color: var(--accent-dark);
+    background-color: #071023;
     background-image:
-      radial-gradient(circle at 10px 12px, rgba(255,255,255,0.16) 0 3px, transparent 3.5px),
-      radial-gradient(circle at 34px 30px, rgba(255,255,255,0.11) 0 2.5px, transparent 3px),
-      radial-gradient(circle at 58px 10px, rgba(255,255,255,0.13) 0 2px, transparent 2.5px),
-      radial-gradient(circle at 80px 34px, rgba(255,255,255,0.10) 0 2.5px, transparent 3px);
+      radial-gradient(circle at 10px 12px, rgba(56,189,248,0.28) 0 3px, transparent 3.5px),
+      radial-gradient(circle at 34px 30px, rgba(56,189,248,0.18) 0 2.5px, transparent 3px),
+      radial-gradient(circle at 58px 10px, rgba(56,189,248,0.22) 0 2px, transparent 2.5px),
+      radial-gradient(circle at 80px 34px, rgba(56,189,248,0.16) 0 2.5px, transparent 3px);
     background-size: 96px 48px;
   }
   .hero-body { padding: 0 2rem 2rem; text-align: center; }
@@ -124,26 +127,26 @@
     border: 1px solid var(--border);
     padding: 8px;
     margin-top: -44px;
-    box-shadow: 0 4px 14px rgba(0,0,0,0.10);
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.15);
   }
   .hero h1 { font-size: 1.9rem; font-weight: 600; letter-spacing: -0.5px; margin: 18px auto 10px; max-width: 620px; }
   .hero p  { font-size: 15px; color: var(--text-secondary); line-height: 1.65; max-width: 540px; margin: 0 auto; }
 
   .hero-actions { display: flex; align-items: center; justify-content: center; gap: 14px; flex-wrap: wrap; margin-top: 24px; }
   .btn-primary {
-    background: var(--accent); color: #fff;
+    background: var(--accent); color: #020617;
     padding: 12px 26px; border-radius: var(--radius);
     font-weight: 600; font-size: 14px;
     text-decoration: none; display: inline-block;
     transition: background 0.15s, transform 0.1s;
   }
-  .btn-primary:hover { background: var(--accent-dark); }
+  .btn-primary:hover { background: var(--accent-dark); color: #e5e7eb; }
   .btn-primary:active { transform: scale(0.97); }
 
   .badge-status {
     font-family: 'JetBrains Mono', monospace;
     font-size: 12px; font-weight: 600;
-    background: var(--gold-light); color: var(--gold);
+    background: var(--allowed-bg); color: var(--allowed-text);
     padding: 7px 14px; border-radius: 20px;
   }
 
@@ -215,8 +218,9 @@
     font-size: 19px;
     flex-shrink: 0;
     transition: background 0.15s;
+    border: 1px solid var(--border);
   }
-  .module-card.open .module-num { background: var(--accent-light); }
+  .module-card.open .module-num { background: var(--accent-light); border-color: var(--accent); }
 
   .module-title-wrap { flex: 1; min-width: 0; }
   .module-title    { font-size: 15.5px; font-weight: 600; letter-spacing: -0.2px; }
@@ -228,7 +232,7 @@
     stroke-width: 2; stroke-linecap: round; stroke-linejoin: round;
     transition: transform 0.2s;
   }
-  .module-card.open .chevron { transform: rotate(180deg); }
+  .module-card.open .chevron { transform: rotate(180deg); stroke: var(--accent); }
 
   .module-body { display: none; border-top: 1px solid var(--border); padding: 1.1rem 1.5rem 1.4rem calc(1.5rem + 52px); }
   .module-card.open .module-body { display: block; }
@@ -258,7 +262,7 @@
   .info-bar {
     background: var(--bg);
     border: 1px solid var(--border);
-    border-left: 3px solid var(--gold);
+    border-left: 3px solid var(--allowed-border);
     border-radius: var(--radius);
     padding: 14px 18px;
     font-size: 13px; color: var(--text-secondary);
@@ -267,7 +271,7 @@
   .info-bar strong { color: var(--text-primary); font-weight: 600; }
 
   /* LEGAL LINKS */
-  .legal-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
+  .legal-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px; }
   .legal-item {
     background: var(--bg); border: 1px solid var(--border); border-radius: var(--radius-lg);
     padding: 16px 18px; text-decoration: none; display: flex; align-items: center; gap: 12px;
@@ -300,16 +304,17 @@
   /* SCROLL TOP */
   .scroll-top {
     position: fixed; bottom: 2rem; right: 2rem;
-    width: 40px; height: 40px;
+    width: 42px; height: 42px;
     background: var(--accent); border: none; border-radius: 50%;
     cursor: pointer; display: flex; align-items: center; justify-content: center;
     opacity: 0; pointer-events: none;
     transition: opacity 0.2s, transform 0.2s;
     z-index: 50;
+    box-shadow: 0 4px 16px rgba(56, 189, 248, 0.35);
   }
   .scroll-top.show { opacity: 1; pointer-events: auto; }
   .scroll-top:hover { transform: translateY(-2px); }
-  .scroll-top svg { width: 18px; height: 18px; fill: none; stroke: #fff; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
+  .scroll-top svg { width: 18px; height: 18px; fill: none; stroke: #020617; stroke-width: 2.5; stroke-linecap: round; stroke-linejoin: round; }
 
   /* FOCUS VISIBLE */
   a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
@@ -339,7 +344,7 @@
     .principles-grid, .legal-grid, .contact-grid { grid-template-columns: 1fr; }
     .final-brand { padding: 1rem 1.25rem; }
     .final-body { padding: 1.25rem; }
-    .scroll-top { bottom: 1rem; right: 1rem; width: 36px; height: 36px; }
+    .scroll-top { bottom: 1rem; right: 1rem; width: 38px; height: 38px; }
   }
 
   @media (max-width: 380px) {
@@ -385,8 +390,9 @@
       <p>Comunidad Aspirantes, Mi Perfil y UbicaTecNM, todo en una sola app pensada para acompañarte en tu camino hacia el Instituto Tecnológico de Villahermosa.</p>
 
       <div class="hero-actions">
-        <a href="#funciones" class="btn-primary">Conoce las funciones</a>
-        <span class="badge-status">🚧 En desarrollo</span>
+        <a href="https://programix-navejl.github.io/Aspirantes-ITVH-Proyecto-Web/" target="_blank" rel="noopener noreferrer" class="btn-primary">Usar la app</a>
+        <a href="#funciones" style="font-size: 13px; font-weight: 500; color: var(--text-secondary); text-decoration: none;">Conoce las funciones</a>
+        <span class="badge-status">🌐 Disponible en la web</span>
       </div>
 
       <div class="hero-meta">
@@ -509,7 +515,7 @@
     </div>
 
     <div class="info-bar">
-      <strong>🚧 En desarrollo.</strong> Actualmente estamos construyendo Aspirantes ITVH. Síguenos en los canales oficiales de Programix NaveJL para enterarte del lanzamiento.
+      <strong>🌐 Ya disponible en la web.</strong> Puedes usar Aspirantes ITVH desde ahora en <a href="https://programix-navejl.github.io/Aspirantes-ITVH-Proyecto-Web/" target="_blank" rel="noopener noreferrer" style="color: inherit; text-decoration: underline;">su versión web</a>. Próximamente estará disponible en Google Play y App Store.
     </div>
   </section>
 
@@ -520,18 +526,25 @@
     <p class="block-subtitle">Términos y privacidad de la plataforma</p>
 
     <div class="legal-grid">
-      <a class="legal-item" href="https://programix-navejl.github.io/ASPIRANTES_ITVH/terminos.html">
+      <a class="legal-item" href="https://programix-navejl.github.io/Aspirantes-ITVH-Cumplimiento-Legal/terminos.html">
         <span class="legal-icon">📄</span>
         <div>
           <div class="legal-name">Términos y Condiciones</div>
           <div class="legal-desc">Reglas de uso de la plataforma</div>
         </div>
       </a>
-      <a class="legal-item" href="https://programix-navejl.github.io/ASPIRANTES_ITVH/politicas.html">
+      <a class="legal-item" href="https://programix-navejl.github.io/Aspirantes-ITVH-Cumplimiento-Legal/politicas.html">
         <span class="legal-icon">🔒</span>
         <div>
           <div class="legal-name">Política de Privacidad</div>
           <div class="legal-desc">Cómo tratamos tus datos</div>
+        </div>
+      </a>
+      <a class="legal-item" href="https://programix-navejl.github.io/Aspirantes-ITVH-Cumplimiento-Legal/estandares.html">
+        <span class="legal-icon">🛡️</span>
+        <div>
+          <div class="legal-name">Estándares de Seguridad Infantil</div>
+          <div class="legal-desc">Nuestro compromiso de protección</div>
         </div>
       </a>
     </div>
@@ -547,7 +560,7 @@
       </div>
     </div>
     <div class="final-body">
-      <p>Aspirantes ITVH es desarrollada por <strong>Programix NaveJL</strong> para acompañar a los futuros estudiantes del Instituto Tecnológico de Villahermosa. Este sitio se mantendrá actualizado conforme avance el desarrollo de la app.</p>
+      <p>Aspirantes ITVH es desarrollada por <strong>Programix NaveJL</strong> para acompañar a los futuros estudiantes del Instituto Tecnológico de Villahermosa. Este sitio se mantendrá actualizado conforme evolucione la app.</p>
 
       <div class="contact-grid">
         <div class="contact-item">
@@ -556,7 +569,7 @@
         </div>
         <div class="contact-item">
           <div class="c-label">Estado</div>
-          <div class="c-val">En desarrollo</div>
+          <div class="c-val">Disponible en la web · Próximamente en Google Play</div>
         </div>
         <div class="contact-item">
           <div class="c-label">Desarrollado por</div>
@@ -571,8 +584,8 @@
           <div class="c-val"><a href="mailto:alfredo.naveju.lop@gmail.com">alfredo.naveju.lop@gmail.com</a></div>
         </div>
         <div class="contact-item">
-          <div class="c-label">Términos y Condiciones</div>
-          <div class="c-val"><a href="https://programix-navejl.github.io/ASPIRANTES_ITVH/terminos.html">Ver documento</a></div>
+          <div class="c-label">Versión web</div>
+          <div class="c-val"><a href="https://programix-navejl.github.io/Aspirantes-ITVH-Proyecto-Web/" target="_blank" rel="noopener noreferrer">Usar Aspirantes ITVH</a></div>
         </div>
       </div>
 
