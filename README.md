@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-  <img src="https://programix-navejl.github.io/comunidad-itvh/imagenes/logo_comunidad_itvh.png" alt="Logo Jaguar ITVH" width="130">
+  <img src="https://programix-navejl.github.io/Programix-NaveJL-Pagina-Oficial/logo_jaguar.png" alt="Logo Jaguar ITVH" width="130">
 </p>
 
 <h1 align="center">Cumplimiento Legal y Normativo</h1>
